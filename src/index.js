@@ -1,4 +1,15 @@
-import { clearContent, loadHome, loadMenu, loadContact } from "./load.js";
+import { loadHome } from "./home.js";
+import { loadMenu } from "./menu.js";
+import { loadContact } from "./contact.js";
+
+function clearContent()
+{
+    const content = document.querySelector("#content");
+    while (content.firstChild)
+    {
+        content.removeChild(content.lastChild);
+    }
+}
 
 loadHome();
 
