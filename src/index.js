@@ -1,1 +1,3 @@
-alert("Hello there!");
+import { loadContent } from "./load.js";
+
+loadContent();
