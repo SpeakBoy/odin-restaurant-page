@@ -1,3 +1,15 @@
-import { loadContent } from "./load.js";
+import { clearContent, loadHome, loadMenu } from "./load.js";
 
-loadContent();
+loadHome();
+
+const homeButton = document.querySelector("#home");
+homeButton.addEventListener("click", () => {
+    clearContent();
+    loadHome();
+});
+
+const menuButton = document.querySelector("#menu");
+menuButton.addEventListener("click", () => {
+    clearContent();
+    loadMenu();
+});
