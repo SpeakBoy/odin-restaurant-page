@@ -1,4 +1,4 @@
-import { clearContent, loadHome, loadMenu } from "./load.js";
+import { clearContent, loadHome, loadMenu, loadContact } from "./load.js";
 
 loadHome();
 
@@ -12,4 +12,10 @@ const menuButton = document.querySelector("#menu");
 menuButton.addEventListener("click", () => {
     clearContent();
     loadMenu();
+});
+
+const contactButton = document.querySelector("#contact");
+contactButton.addEventListener("click", () => {
+    clearContent();
+    loadContact();
 });
